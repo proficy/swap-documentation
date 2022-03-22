@@ -62,11 +62,25 @@ We at PROFICY took every available measure to prevent any malicious activity cou
 7. **Proficy Wallet**: Create a new wallet with the ability to export the seed phrase and private key.
 8. **Imported Wallet**: Import a wallet here. You can input your private key only and ProficySwap will automatically detect your wallet address. Your private key will be encrypted and safely stored locally on your computer. Note that your private key is different from your seed phrase. Follow these instructions to export your private key for use in the ProficySwap app: https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key.
 
+## SUPPLEMENTAL TOOLS  
+[**Portfolio**](#portfolio)  
+[**Transfer**](#transfer)  
+[**Token Data**](#token-data)  
+
+### Portfolio  
+
+
+
 ## ADVANCED USAGE
-The following features are examples of advanced ways to use ProficySwap.
+The following features are examples of advanced ways to use ProficySwap.  
+[**Manual Sniper**](#manual-sniper)  
+[**SafeBuy**](#safebuy)  
+[**Change Design**](#change-design)  
+[**Speedtest**](#speedtest)
+
 ### Manual Sniper
 ![](pictures/manual.png)  
-If you want to buy a launch and be one of the first to buy when liquidity is added or antibot measures are finished, you can put that token in the bottom "to" token and wait until the warning disappears. ProficySwap will automatically check every block until trading is enabled and it's safe to buy. 
+If you want to buy a launch and be one of the first to buy when liquidity is added or antibot measures are finished, you can put that token in the bottom "to" token and wait until the warning disappears. ProficySwap will automatically check every block until trading is enabled and it's safe to buy. Note: you must have an input in the top token for it to scan for liquidity being added.
 
 ### SafeBuy
 ![](pictures/safebuy.png)  
