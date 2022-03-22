@@ -66,18 +66,35 @@ We at PROFICY took every available measure to prevent any malicious activity cou
 [**Portfolio**](#portfolio)  
 [**Transfer**](#transfer)  
 [**Token Data**](#token-data)  
-
+[**Search**](#search)
 ### Portfolio  
+![](pictures/portfolio.png)  
+1. View your current portfolio and balances with worth of tokens in USD. Click the headers to sort by token name, highest or lowest balances, or favorite tokens.
+2. Click these buttons to view your overall portfolio, refresh your tokens with updated balanaces, view favorites, and view deleted tokens.
+3. Set a lower and upper limit in USD to filter your portfolio by.
+4. Click this button to ["Sell Dust"](#sell-dust), which will allow you to immediately sell all tokens within the given lower and upper limits.
+5. Filter your tokens by range, [filter honeypots](#filter-honeypots), or delete all within the given range.
+### Transfer  
+![](pictures/transfer.png)  
+Easily transfer your tokens to external wallets or newly created Proficy wallets. Your entire filtered portfolio is displayed. Click on the arrow next to select which token to transfer. ProficySwap will calculate optimal gas prices and limits if possible. Enter the wallet to transfer to and the token amount and click send to complete the transfer.
 
-
+### Token Data  
+![](pictures/tokendata.png)  
+1. **General**: View general information about the token. Click the contract address or contract owner address to view additional information on BscScan.
+2. **Liquidity**: View liquidity information and current worth of liquidity pairs in USD. ProficySwap also displays where liquidity is locked and for how long it's locked if available. If liquidity locks are not displayed, double check the liquidity pair holders list in BscScan to make sure.
+3. **User Trades**: View your most recent trades on the selected token.
+4. **Top Holders**: View the top holders and percentage of supply owned.
+### Search  
+![](pictures/tokensearch.png)  
+ProficySwap offers the fastest token search available. Click on a token symbol from the main swap view to open token search and search by token name, symbol, or contract address. The tokens with the highest amounts of liquidity are displayed first. This information is updated in real time with new tokens and updated liquidity amounts. Only tokens with greater than $1000 in liquidity are displayed. Click on Name, Date, or Liquidity to filter on these items.
 
 ## ADVANCED USAGE
-The following features are examples of advanced ways to use ProficySwap.  
 [**Manual Sniper**](#manual-sniper)  
 [**SafeBuy**](#safebuy)  
-[**Change Design**](#change-design)  
+[**Bypass maxTx**](#bypass-maxtx)
+[**Sell Dust**](#sell-dust)
 [**Speedtest**](#speedtest)
-
+[**Change Design**](#change-design)  
 ### Manual Sniper
 ![](pictures/manual.png)  
 If you want to buy a launch and be one of the first to buy when liquidity is added or antibot measures are finished, you can put that token in the bottom "to" token and wait until the warning disappears. ProficySwap will automatically check every block until trading is enabled and it's safe to buy. Note: you must have an input in the top token for it to scan for liquidity being added.
@@ -86,10 +103,26 @@ If you want to buy a launch and be one of the first to buy when liquidity is add
 ![](pictures/safebuy.png)  
 In this example, the maximum buy fee is set to 5% in the settings tab on the right. After clicking swap, SafeBuy protects from buying since the selected token has a buy tax of 10%. This feature protects you from buying high tax tokens, honeypots, and tokens that have antibot measures in place. 
 
+### Bypass maxTx
+![](pictures/maxtx.png)  
+Many tokens restrict buyers directly after launch by setting low maximum transaction amounts. ProficySwap allows you to bypass these limits by using a custom smart contract to make multiple transactions in one. Click on the dropdown next to the Bypass maxTx to view how many calls will be made in a single transaction or override this value yourself. Be aware that every call costs gas so your transaction fees will be higher than normal.
+### Sell Dust
+![](pictures/selldust1.png)  
+To sell your dust, select a lower and upper range and click the Sell Dust button. Note: it's better to filter out honeypots before selling your dust.  
+![](pictures/selldust2.png)   
+After clicking Sell Dust, ProficySwap will simulate a buy and sell on each of the filtered tokens to see if the transaction would succeed or if it's worth the cost of gas to sell the tokens. Select all tokens and click Delete to move them to your deleted list.
+![](pictures/selldust3.png)  
+Confirm that you would like to sell all the tokens displayed or unselect any tokens you'd like to keep.   
+![](pictures/selldust4.png)   
+ProficySwap will sell all selected dust tokens at once, displaying if each transaction succeeded or failed and the total recovered amount. In this example, 1.65 BNB was recovered from selling dust tokens.  
+![](pictures/selldust5.png)   
+If you check your wallet in BscScan, you can see that all tokens were sold within seconds.
 ### Speedtest
 ![](pictures/speedtest.png)  
 Clicking the SPEEDTEST button in SETUP will automatically test all Proficy private nodes and your own node if available and automatically select the fastest node for you. This ensures you have the fastest transaction speeds and swap updates. Using Proficy private nodes means you will have an advantage when networks are congested and others are relying on public RPC nodes.
-
+### Change Design
+![](pictures/design.png)  
+The design of ProficySwap is highly customizable. Click the Change Design button in your settings to choose any color you desire.
 ## CHANGELOG
 ProficySwap bugfixes, enhancements, and new features will be posted here. 
 
