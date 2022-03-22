@@ -12,6 +12,7 @@ We at PROFICY took every available measure to prevent any malicious activity cou
 ## TABLE OF CONTENTS
 [**SWAP**](#swap)  
 [**SETTINGS**](#settings)  
+[**SUPPLEMENTAL TOOLS**](#supplemental-tools)  
 [**ADVANCED USAGE**](#advanced-usage)  
 [**CHANGELOG**](#changelog)  
 
@@ -21,17 +22,22 @@ We at PROFICY took every available measure to prevent any malicious activity cou
 ![](pictures/swap.png)  
 
 1.	**Chain Selection**: Easily switch between chains by clicking on these icons. BSC is currently supported, but ETH, AVAX, and FTM are actively in development and will be added soon.
-2.	**Swap Setup** Click this icon to open the [SETUP](#setup) window.
-3.	**Tracker (COMING SOON)**: This button opens the Proficy Token Tracker. This will allow you to view current token holdings accumulated through use of ProficySwap, with features like sell initial at X, automatically sell at X, stop-loss, and manually selling a percentage of holdings. [Click here](https://www.proficy.io/whitepaper.pdf#page=5) for more info.
-4.	**Antirug (COMING SOON)** Proven to be effective in [proficy.io](https://www.proficy.io) applications, when enabled, Proficy Antirug will automatically frontrun malicious activity from devs like pulling liquidity or changing max transaction amounts and sells before these changes can take effect.
-5.	**Data (COMING SOON)** Click this button to view supplemental information like the Proficy Token Analyzer to view token-related information and charts. [Click here](https://www.proficy.io/whitepaper.pdf#page=5) for more info.
-6.	**Tax Info**: Buy Tax / Sell Tax for each token displayed. This info updates in real time so you can easily watch and buy or sell if taxes are lowered.
-7. **General Swap Info**: Standard swap information is displayed here such as balance and price updates of the tokens selected. Click on the token symbol to choose a new token. Click on the chart icons to open DEX Screener charts for the selected token. Clicking the SWAP button will immediately send a transaction through a Proficy private node (or your own private node if you choose) immediately without the need for confirmation. This means a transaction should go through immediately without having to confirm and wait like you have to do in other swaps.
-8. **Swap Settings**: ProficySwap offers the following customized settings:  
+2. [**Supplemental Tools**](#supplemental-tools): Proficy offers the following supplemental tools included with the swap:
+- [**Portfolio**](#portfolio): View your entire portfolio with the ability to favorite, delete, filter out honeypots, and a "sell dust" feature to sell all tokens within a given range. 
+- [**Transfer**](#transfer): Transfer your tokens to external wallets or between newly created wallets in ProficySwap.
+- [**Token Data**](#token-data): View token info such as holders, market cap, liquidity lock information, user trades, and top holders.
+- **Charts** (Coming soon): view token charts directly in ProficySwap.
+3.	**Swap Setup** Click this icon to open the [SETUP](#setup) window.
+4.	**Socials**: Learn more about Proficy at https://proficy.io or join us on the following platforms:  
+- Telegram: https://t.me/ProficyNetworkPortal
+- Discord: https://discord.gg/Ske27Qnmmn 
+5.	**Tax Info**: Buy Tax / Sell Tax for each token displayed. This info updates in real time so you can easily watch and buy or sell if taxes are lowered. Note: you must have an amount in the input for the tax to update automatically.
+6. **General Swap Info**: Standard swap information is displayed here such as balance and price updates of the tokens selected. Click on the token symbol to choose a new token. Click on the chart icons to open DEX Screener charts for the selected token. Clicking the SWAP button will immediately send a transaction through a Proficy private node (or your own private node if you choose) immediately without the need for confirmation. This means a transaction should go through immediately without having to confirm and wait like you have to do in other swaps.
+7. **Swap Settings**: ProficySwap offers the following customized settings:  
 - **SafeBuy**: If checked, [SafeBuy](#safebuy) will automatically protect you from buying honeypots, antibot, or high tax tokens. 
 - **Bypass maxTx**: If this is checked, the swap will bypass maxTxAmount and do multiple buy/sell calls in one single Tx (be aware, every call costs gas).
 - **Gas Price**: Easily change your gas price (gwei) here without having to click through multiple windows like you would have to in MetaMask. 
-9. **Swap Info**: The following swap information is displayed here:
+8. **Swap Info**: The following swap information is displayed here:
 - **Route**: The best possible route that results in the most tokens received.
 - **Slippage**: Price change you are willing to accept while your Tx is processed.
 - **Verified**: If checked, ProficySwap will automatically check if the "to" (bottom) token is verified on the chain explorer (e.g., BscScan or Etherscan). If the scan website is slow or under mainteance, uncheck this checkbox (be aware, bypassing maxTx is not possible then).
@@ -42,16 +48,19 @@ We at PROFICY took every available measure to prevent any malicious activity cou
 ## SETUP
 
 ![](pictures/setup.png)  
-1. **Wallet and Private Key Inputs**: Enter your wallet and private key here. You can input your private key only and ProficySwap will automatically detect your wallet address. Your private key will be encrypted and safely stored locally on your computer. Note that your private key is different from your seed phrase. Follow these instructions to export your private key for use in the ProficySwap app: https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key.
-2. **Custom Websocket URL**: If you host your own private node, enter the websocket URL here. Otherwise leave this blank and use a Proficy hosted private node.
-3. **Standard Inputs**: Standard inputs the app will load on startup. Top input is gwei and bottom input is slippage.
-4. **Max Fees**: The maximum txFees you are willing to accept on a trade if SafeBuy is active. Top input is buy fee and bottom input is sell fee.  
-5. **Node Selection**: Choose a Proficy node or select your own node in this dropdown.
-6. **Auto-Approve**: If auto-approve is active, it will silently approve a token you just bought.  
-7. **Speedtest**: The [SPEEDTEST](#speedtest) will find the best endpoint for you.
-8. **Save**: Save your inputs here. Wallet and Private Key are the only required inputs.
-9. **Update**: Check to see if you have the most recent version of ProficySwap and automatically download the latest version if not. 
-
+1. **Custom Websocket URL**: If you host your own private node, enter the websocket URL here. Otherwise leave this blank and use a Proficy hosted private node.
+2. **Standard Inputs**: Standard inputs the app will load on startup. Top input is gwei and bottom input is slippage.
+3. **Max Fees**: The maximum txFees you are willing to accept on a trade if SafeBuy is active. Top input is buy fee and bottom input is sell fee.  
+4. **Node Selection**: Choose one of Proficy node's hosted around the globe or select your own node in this dropdown.
+5.  **Auto-Approve/Always on Top**: If auto-approve is active, it will silently approve a token you just bought which will allow you to immediately sell if needed. Always On Top will allow you to keep ProficySwap pinned to the top so you can always have the swap open while you're viewing charts or browsing the web.
+6. **Settings Buttons**
+- **Speedtest**: The [SPEEDTEST](#speedtest) will find the best endpoint for you.
+- **Update**: Click this to see if your current version of ProficySwap is up-to-date. If not, the latest version will automatically start downloading to your default Downloads folder.
+- **Save**: Save your current swap settings.
+- **Change Password**: Change your current password that is used to logged into the app. It will be automatically encrypted.  
+- [**Change Design**](#change-design): Configure your background colors to anything you desire.  
+7. **Proficy Wallet**: Create a new wallet with the ability to export the seed phrase and private key.
+8. **Imported Wallet**: Import a wallet here. You can input your private key only and ProficySwap will automatically detect your wallet address. Your private key will be encrypted and safely stored locally on your computer. Note that your private key is different from your seed phrase. Follow these instructions to export your private key for use in the ProficySwap app: https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key.
 
 ## ADVANCED USAGE
 The following features are examples of advanced ways to use ProficySwap.
