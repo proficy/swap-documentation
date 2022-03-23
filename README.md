@@ -5,13 +5,13 @@
 ## DISCLAIMER  
 PROFICY is not liable for any loss of funds through the use of the swap. This includes every possible scenario (e.g., bad trading habits, a user being victim of a cyber attack, servers being attacked, buying cryptocurrencies run by malicious developers, etc.)  
 
-We explcitly recommend **NOT TO USE YOUR MAIN WALLET** for our swap. This is common practice with these kind of products and should always be kept this way.  
+We strongly recommend that you **DO NOT USE YOUR MAIN WALLET** for our swap.  
 
-We at PROFICY took every available measure to prevent any malicious activity could happen on our end by encrypting private keys and keeping our nodes secure.  
+We at PROFICY took every available measure to prevent any malicious activity by encrypting private keys and keeping our nodes secure.  
 
 ## TABLE OF CONTENTS
 [**SWAP**](#swap)  
-[**SETTINGS**](#settings)  
+[**SETUP**](#setup)  
 [**SUPPLEMENTAL TOOLS**](#supplemental-tools)  
 [**ADVANCED USAGE**](#advanced-usage)  
 [**CHANGELOG**](#changelog)  
