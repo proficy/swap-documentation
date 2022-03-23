@@ -116,7 +116,7 @@ Confirm that you would like to sell all the tokens displayed or unselect any tok
 ![](pictures/selldust4.png)   
 ProficySwap will sell all selected dust tokens at once, displaying if each transaction succeeded or failed and the total recovered amount. In this example, 1.65 BNB was recovered from selling dust tokens.  
 ![](pictures/selldust5.png)   
-If you check your wallet in BscScan, you can see that all tokens were sold within seconds.
+Checking the wallet in BscScan, you can see that all tokens were sold within seconds.
 ### Speedtest
 ![](pictures/speedtest.png)  
 Clicking the SPEEDTEST button in SETUP will automatically test all Proficy private nodes and your own node if available and automatically select the fastest node for you. This ensures you have the fastest transaction speeds and swap updates. Using Proficy private nodes means you will have an advantage when networks are congested and others are relying on public RPC nodes.
