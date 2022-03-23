@@ -110,7 +110,7 @@ Many tokens restrict buyers directly after launch by setting low maximum transac
 ![](pictures/selldust1.png)  
 To sell your dust, select a lower and upper range and click the Sell Dust button. Note: it's better to filter out honeypots before selling your dust.  
 ![](pictures/selldust2.png)   
-After clicking Sell Dust, ProficySwap will simulate a buy and sell on each of the filtered tokens to see if the transaction would succeed or if it's worth the cost of gas to sell the tokens. Select all tokens and click Delete to move them to your deleted list.
+After clicking Sell Dust, ProficySwap will simulate a buy and sell on each of the filtered tokens to see if the transaction would succeed or if it's worth the cost of gas to sell the tokens. Select all tokens and click Delete to move them to your deleted list.  
 ![](pictures/selldust3.png)  
 Confirm that you would like to sell all the tokens displayed or unselect any tokens you'd like to keep.   
 ![](pictures/selldust4.png)   
