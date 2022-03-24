@@ -91,9 +91,9 @@ ProficySwap offers the fastest token search available. Click on a token symbol f
 ## ADVANCED USAGE
 [**Manual Sniper**](#manual-sniper)  
 [**SafeBuy**](#safebuy)  
-[**Bypass maxTx**](#bypass-maxtx)
-[**Sell Dust**](#sell-dust)
-[**Speedtest**](#speedtest)
+[**Bypass maxTx**](#bypass-maxtx)  
+[**Sell Dust**](#sell-dust)  
+[**Speedtest**](#speedtest)  
 [**Change Design**](#change-design)  
 ### Manual Sniper
 ![](pictures/manual.png)  
